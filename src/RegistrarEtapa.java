@@ -107,7 +107,7 @@ public class RegistrarEtapa {
                     posiciones.add(i);
                 }
 
-                Collections.shuffle(posiciones);
+                Collections.shuffle(posiciones); //mezclamos
 
                 // INSERT PARTICIPACION
 
