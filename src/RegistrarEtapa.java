@@ -118,7 +118,7 @@ public class RegistrarEtapa {
 
                 PreparedStatement psPart = conexion.prepareStatement(sqlPart);
 
-                for (int i = 0; i < top; i++) {
+                for (int i = 0; i < top; i++) { //Bucle para añadir los puntos a las posiciones 1 2 3 4 y 5
 
                     int id = ciclistas.get(i);
                     int posicion = posiciones.get(i);
