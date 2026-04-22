@@ -13,7 +13,7 @@ public class RegistrarEtapa {
 
         try (Connection conexion = DriverManager.getConnection(url, usuario, password)) {
 
-            // 1. OBTENER MAX + 1
+            // OBTENER MAX + 1
 
             String sqlMax = "SELECT MAX(numero) FROM etapa";
 
@@ -29,7 +29,7 @@ public class RegistrarEtapa {
             System.out.println("Numero de etapa generado: " + numero);
 
 
-            // 2. DATOS POR CONSOLA
+            // DATOS POR CONSOLA
 
 
             System.out.print("Origen: ");
@@ -47,7 +47,7 @@ public class RegistrarEtapa {
 
             java.sql.Date fecha = java.sql.Date.valueOf(fechaTexto);
 
-            // 3. INICIO TRANSACCION
+            //INICIO TRANSACCION
 
             conexion.setAutoCommit(false);
 
