@@ -126,9 +126,7 @@ public class RegistrarEtapa {
                     int puntos = 0;
 
                     switch (posicion) {
-                        case 1:
-                            puntos = getPuntos();
-                            break;
+                        case 1: puntos = 100; break;
                         case 2: puntos = 90; break;
                         case 3: puntos = 80; break;
                         case 4: puntos = 70; break;
@@ -169,11 +167,5 @@ public class RegistrarEtapa {
         }
 
         sc.close();
-    }
-
-    private static int getPuntos() {
-        int puntos;
-        puntos = 100;
-        return puntos;
     }
 }
